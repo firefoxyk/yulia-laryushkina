@@ -294,6 +294,7 @@ footer a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
   .role-content li, .role-details li { margin-bottom: .6mm; }
   details { display: block !important; break-inside: auto; }
   details > * { display: block !important; }
+  .role-eletek { break-before: page; page-break-before: always; }
   .role-secondary summary { min-height: 0; padding: 2.5mm 0 1mm; display: block !important; break-inside: avoid-page; break-after: avoid-page; border-radius: 0; background: transparent !important; }
   .summary-main strong { font-size: 11.5pt; line-height: 1.15; }
   .summary-main small { margin-top: .5mm; font-size: 8pt; }
