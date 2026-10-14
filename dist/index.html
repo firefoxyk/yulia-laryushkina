@@ -6,6 +6,8 @@
   <meta name="description" content="Резюме Юлии Ларюшкиной — брокера по жилой и коммерческой недвижимости в Москве и Рязани.">
   <meta name="theme-color" content="#f4fbfb">
   <title>Юлия Ларюшкина — брокер по недвижимости</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
 </head>
@@ -41,6 +43,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Открыта к предложениям · Москва / Рязань</p>
         <h1 id="hero-title">Юлия<br>Ларюшкина</h1>
+        <p class="print-name">Ларюшкина Юлия Сергеевна</p>
         <p class="hero-role">Брокер по жилой и коммерческой недвижимости</p>
         <p class="hero-summary">Сопровождаю клиента от определения задачи и подбора объекта до переговоров, договора и передачи недвижимости.</p>
         <div class="hero-contacts" aria-label="Контакты">
@@ -59,11 +62,11 @@
           <span class="fact-label">проданных объектов приобретены повторными покупателями</span>
         </div>
         <div class="fact-pair">
-          <div class="fact">
-            <span class="fact-value">2022–2026</span>
-            <span class="fact-label">частная практика, с перерывами</span>
+          <div class="fact fact-language">
+            <span class="fact-value">Английский</span>
+            <span class="fact-label">свободное владение</span>
           </div>
-          <div class="fact">
+          <div class="fact fact-salary">
             <span class="fact-value">от 150 000 ₽</span>
             <span class="fact-label">зарплатные ожидания</span>
           </div>
@@ -120,7 +123,7 @@
           <summary>
             <span class="summary-main"><strong>Руководитель отдела логистики</strong><small>«9 жизней» · ветеринарная клиника · Рязань</small></span>
             <span class="role-period">2015–2022</span>
-            <span class="summary-action" aria-hidden="true">Подробнее</span>
+            <span class="summary-action" aria-hidden="true"></span>
           </summary>
           <div class="role-details">
             <ul>
@@ -135,7 +138,7 @@
           <summary>
             <span class="summary-main"><strong>Заместитель коммерческого директора / Руководитель проектов</strong><small>ООО «Элетек» · строительство и поставка IT-оборудования</small></span>
             <span class="role-period">2007–2015</span>
-            <span class="summary-action" aria-hidden="true">Подробнее</span>
+            <span class="summary-action" aria-hidden="true"></span>
           </summary>
           <div class="role-details">
             <p class="positions">Заместитель коммерческого директора · 2007–2010 и 2014–2015<br>Руководитель проектов · 2010–2013</p>
@@ -153,7 +156,7 @@
           <summary>
             <span class="summary-main"><strong>Помощник генерального директора</strong><small>«Артстайл» · разработка сайтов</small></span>
             <span class="role-period">2006–2007</span>
-            <span class="summary-action" aria-hidden="true">Подробнее</span>
+            <span class="summary-action" aria-hidden="true"></span>
           </summary>
           <div class="role-details">
             <ul>
@@ -218,9 +221,13 @@
           <a href="mailto:atrstyle82@bk.ru"><span>Email</span><strong>atrstyle82@bk.ru</strong></a>
           <div><span>География</span><strong>Москва и Рязань</strong><small>проживаю в обоих городах</small></div>
         </div>
-        <div class="contact-actions">
-          <button class="button button-light" id="copy-link" type="button">Скопировать ссылку</button>
-          <button class="button button-outline" id="print-page" type="button">Печать / сохранить PDF</button>
+        <div class="contact-primary-actions" aria-label="Связаться">
+          <a class="button button-light" href="tel:+79109094777">Позвонить</a>
+          <a class="button button-outline" href="mailto:atrstyle82@bk.ru">Написать</a>
+        </div>
+        <div class="contact-actions" aria-label="Дополнительные действия">
+          <button class="button button-quiet" id="copy-link" type="button">Скопировать ссылку</button>
+          <button class="button button-quiet" id="print-page" type="button">Печать / сохранить PDF</button>
         </div>
         <p class="print-hint">Для чистого PDF отключите колонтитулы в настройках печати браузера.</p>
         <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
