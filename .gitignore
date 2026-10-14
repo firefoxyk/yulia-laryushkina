@@ -1,0 +1,6 @@
+# Local browser QA artifacts
+_qa-*
+_cdp-*
+.chrome-*/
+.edge-qa/
+.cdp-qa/
