@@ -110,6 +110,18 @@ details:not([open]) .summary-action::after { content: "+"; margin-left: 8px; }
 .role-details { max-width: 900px; padding: 0 32px 22px 0; color: var(--muted); }
 .positions { color: var(--ink); }
 
+.cases { background: #f8fbfb; }
+.cases-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(24px, 3.5vw, 46px); }
+.case-card { padding: clamp(26px, 3vw, 38px); background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--accent); }
+.case-accent { margin: 0 0 14px; color: var(--accent-dark); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.case-card h3 { margin: 0; font: 500 clamp(25px, 2.1vw, 31px)/1.18 var(--serif); letter-spacing: -.02em; }
+.case-context { margin: 18px 0 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.case-story { margin: 24px 0 0; }
+.case-story div { padding: 16px 0; border-top: 1px solid var(--line); }
+.case-story dt { margin-bottom: 5px; color: var(--accent-dark); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.case-story dd { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.62; }
+.cases-print-link { display: none; }
+
 .skills { background: var(--wash); }
 .skills-layout { grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: clamp(54px, 9vw, 120px); }
 .skills-layout h3 { margin-top: 0; }
@@ -181,7 +193,7 @@ footer a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
   .role-featured::before { left: -35px; }
   .role-content { padding-left: 0; }
   .role-secondary summary::before { left: -35px; }
-  .skills-layout, .education-grid { display: grid; grid-template-columns: 1fr; }
+  .cases-grid, .skills-layout, .education-grid { display: grid; grid-template-columns: 1fr; }
   .digital-skills { padding: 0; border: 0; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-grid > * + * { padding-left: 0; border-left: 0; }
@@ -215,6 +227,8 @@ footer a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
   .summary-action::before { display: none; }
   .summary-action::after { font-size: 20px; }
   .role-details { padding: 0 0 30px; }
+  .case-card { padding: 24px 20px; }
+  .case-story dd { font-size: 15px; line-height: 1.58; }
   .languages > div { grid-template-columns: 1fr; }
   .languages small { grid-column: 1; }
   .contact h2 { margin-bottom: 32px; }
@@ -286,6 +300,11 @@ footer a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
   .role-secondary summary .role-period { display: block; margin-top: .5mm; font-size: 8pt; }
   .role-details { padding: 0 0 2mm; color: #5c7075; }
   .positions { margin: 1mm 0; color: #17292d; }
+  .cases .section-heading { display: none; }
+  .cases .section-body { padding: 1mm 0 3mm; }
+  .case-card { display: none !important; }
+  .cases-print-link { margin: 0; display: block; font-size: 8.5pt; line-height: 1.3; }
+  .cases-print-link a { color: #17292d; }
   .skills { background: #fff; }
   .skills-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(45mm, .85fr); gap: 6mm; }
   .skills-layout h3 { margin: 0 0 1mm; font-size: 7.5pt; }
