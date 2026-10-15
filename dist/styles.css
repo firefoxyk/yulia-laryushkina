@@ -62,7 +62,8 @@ h1 { margin: 0; font: 500 clamp(62px, 5.8vw, 96px)/.92 var(--serif); letter-spac
 .fact-pair { padding-top: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; border-top: 1px solid var(--line); }
 .fact-pair .fact + .fact { padding-left: 24px; border-left: 1px solid var(--line); }
 .fact-language .fact-value { font-size: clamp(20px, 1.75vw, 25px); }
-.fact-salary .fact-value { font: 600 clamp(17px, 1.45vw, 21px)/1.35 var(--sans); }
+.fact-salary .fact-value { font: 600 clamp(17px, 1.45vw, 21px)/1.35 var(--sans); white-space: normal; }
+.fact-salary .fact-label { max-width: 240px; }
 
 .section { border-top: 1px solid var(--line); }
 .section[id] { scroll-margin-top: 92px; }
